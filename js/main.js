@@ -1,4 +1,3 @@
-import { headerContent } from '../params/components.js';
 
 ;(function () {
 	
