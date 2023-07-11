@@ -1,3 +1,5 @@
+import { headerContent } from '../params/components.js';
+
 ;(function () {
 	
 	'use strict';
@@ -60,6 +62,14 @@
 				
 	    	}
 		});
+		var headerMovilContainer = document.getElementById('fh5co-offcanvas');
+		headerMovilContainer.innerHTML = `<ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Nuestra Historia</a></li>
+        <li><a href="gallery.html">Galeria</a></li>
+        <li><a href="contact.html">Sponsor</a></li>
+    </ul>`;
+
 	};
 
 
