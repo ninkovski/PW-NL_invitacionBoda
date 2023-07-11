@@ -48,7 +48,7 @@ export const footerContent = `
 export const headerContent =
     `<ul>
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="about.html">Story</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">Nuestra Historia</a></li>
+        <li><a href="gallery.html">Galeria</a></li>
+        <li><a href="contact.html">Sponsor</a></li>
     </ul>`;
