@@ -86,7 +86,7 @@
 					</div>
 					<div class="desc-groom">
 						<h3>Ninkovski Morales Janampa</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<p>"En tus ojos encuentro mi hogar, en tu sonrisa descubro mi felicidad, y en tu amor encuentro mi mayor fortaleza. Gracias por elegirme para caminar juntos en esta hermosa aventura llamada matrimonio."</p>
 					</div>
 				</div>
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -96,7 +96,7 @@
 					</div>
 					<div class="desc-bride">
 						<h3>Laura Isabel Paredes Mendieta</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<p>Gracias por ser mi mayor apoyo y por hacerme sentir amada en cada momento. Me encuentro llena de emociones indescriptibles mientras me acerco al día en que caminaré hacia el altar tomando tu mano."</p>
 					</div>
 				</div>
 			</div>
@@ -129,7 +129,7 @@
 										<span>Sabado 23</span>
 										<span>Septiembre, 2023</span>
 									</div>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>Deseamos compartir con ustedes el momento más significativo de nuestro amor: recibir el sacramento del santo matrimonio. En la presencia de Dios y rodeados de su gracia, daremos nuestros votos , construyendo un camino de amor y fe.</p>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 text-center">
@@ -145,7 +145,7 @@
 										<span>Sabado 23</span>
 										<span>Septiembre, 2023</span>
 									</div>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>Después de la ceremonia sagrada en la iglesia, nos complace invitarlos a todos a unirse a nosotros en la recepción de nuestra boda. Será un momento de alegría y celebración en el que compartiremos risas, bailes y recuerdos inolvidables.</p>
 								</div>
 							</div>
 						</div>
@@ -320,8 +320,8 @@
 					<form class="form-inline">
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
-								<label for="name" class="sr-only">Codigo</label>
-								<input type="name" class="form-control" id="name" placeholder="Ingresa tu código aquí">
+								<label for="nro-celular" class="sr-only">Número de Celular</label>
+								<input type="name" class="form-control" id="nro-celular" placeholder="Ingresa tu celular aquí">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
@@ -331,8 +331,15 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">Confirmar</button>
+							<div class="form-group">
+								<label for="codigo" class="sr-only">Codigo</label>
+								<input type="name" class="form-control" id="codigo" placeholder="Ingresa tu código aquí">
+							</div>
 						</div>
+						<div class="row" style="display: flex; justify-content: center;">
+						<div class="col-md-3 col-sm-3">
+							<button type="submit" class="btn btn-default btn-block" id="send-button" >Confirmar</button>
+						</div></div>
 					</form>
 				</div>
 			</div>
@@ -366,7 +373,15 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
-	<!-- SWC Modules -->
+	<!-- Libs -->
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+	<!-- SWC -->
+	<!-- Libs -->
+	<script src="swc/js/form.ajax.js"></script>
+
+	<!-- Modules -->
+	<script type="module" src="swc/modules/saveForm.mjs"></script>
 	<script type="module" src="swc/modules/components.mjs"></script>
 
 	<script>
