@@ -25,7 +25,7 @@ export function saveToGoogleSheets() {
     fetch(
         appParams.SheetURL,
         {
-            method: "GET",
+            method: "POST",
             body: formData
         }
     )
