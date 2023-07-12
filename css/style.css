@@ -773,8 +773,6 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #215BEA;
   padding-left: 10px;
   padding-right: 10px;
-    justify-content: center;
-      /* Centrar horizontalmente */
 }
 .fh5co-social-icons li a i {
   font-size: 20px;
@@ -945,7 +943,7 @@ form label {
   /* coutndown blocks */
   display: inline-block;
   width: 80px;
-    height: 80px;
+  height: 80px;
     background: rgba(#215BEA, .8);
   margin: 0 4px;
   -webkit-border-radius: 50%;
