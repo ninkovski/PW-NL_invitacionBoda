@@ -12,6 +12,9 @@ import { consultarSheet } from '../cloud/sheet/consultar.js';
 document.getElementById("send-button").addEventListener("click", function (event) {
     event.preventDefault();
 
+    var sendButton = document.getElementById("send-button");
+    sendButton.disabled = true;
+
     var email = document.getElementById("email").value;
     var code = document.getElementById("codigo").value;
     var nro = document.getElementById("nro-celular").value;
@@ -53,6 +56,10 @@ document.getElementById("send-button").addEventListener("click", function (event
         })
         .catch(function (error) {
             console.error('Error al consultar la hoja de cálculo:', error);
+        })
+        .finally(function () {
+            // Habilitar el botón nuevamente
+            sendButton.disabled = false;
         });
     //
 
