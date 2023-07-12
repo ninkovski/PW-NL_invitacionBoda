@@ -30,8 +30,7 @@ export const assets = {
 export const redesGroup = `
     ${redes.linkedin}
     ${redes.facebook}
-    ${redes.instagram}
-    ${redes.whatsApp} `;
+    ${redes.instagram}`;
 
 export const copyright =
     `<div class="row copyright"><div class="col-md-12 text-center">
