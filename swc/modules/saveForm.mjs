@@ -6,6 +6,8 @@
 import { validMessage } from '../params/messages.js';
 import { saveToGoogleSheets } from '../cloud/sheet/form.js';
 import { sendMailWelcome } from './mail.mjs'
+import { invitados } from '../params/invitados.js';
+
 document.getElementById("send-button").addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -31,8 +33,22 @@ document.getElementById("send-button").addEventListener("click", function (event
         alert(validMessage.ImputNroInvalid);
         return;
     }
-    // llamando a modulo de envio de correos y de sheets de google
+    // Validar código
+    if (!validarCodigo(code)) {
+        alert(validMessage.ImputInvalidCode);
+        return;
+    }
+
+// llamando a modulo de envio de correos y de sheets de google
     sendMailWelcome();
     saveToGoogleSheets();
 
 });
+function validarCodigo(codigo) {
+    for (let i = 0; i < invitados.length; i++) {
+        if (invitados[i][6] === codigo) {
+            return true; // El código existe
+        }
+    }
+    return false; // El código no existe
+}
