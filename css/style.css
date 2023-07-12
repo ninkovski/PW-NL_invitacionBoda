@@ -318,6 +318,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover {
     height: 600px;
+    background-position: center !important;
   }
 }
 .fh5co-cover .display-t,
@@ -331,6 +332,7 @@ h1, h2, h3, h4, h5, h6, figure {
   .fh5co-cover .display-tc {
     height: 600px;
   }
+  
 }
 .fh5co-cover.fh5co-cover-sm {
   height: 600px;
@@ -940,9 +942,9 @@ form label {
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  width: 80px;
+    height: 80px;
+    background: rgba(#215BEA, .8);
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
