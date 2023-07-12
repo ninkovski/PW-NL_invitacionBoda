@@ -7,6 +7,7 @@ import { validMessage } from '../params/messages.js';
 import { saveToGoogleSheets } from '../cloud/sheet/form.js';
 import { sendMailWelcome } from './mail.mjs'
 import { invitados } from '../params/invitados.js';
+import { consultarSheet } from '../cloud/sheet/consultar.js';
 
 document.getElementById("send-button").addEventListener("click", function (event) {
     event.preventDefault();
@@ -38,15 +39,44 @@ document.getElementById("send-button").addEventListener("click", function (event
         alert(validMessage.ImputInvalidCode);
         return;
     }
-
-// llamando a modulo de envio de correos y de sheets de google
-    sendMailWelcome();
-    saveToGoogleSheets();
+    // codigo para validar que existe usar la funcion consultar sheet la columna que valida es la nro 2
+    consultarSheet()
+        .then(function (confirmados) {
+            if (!validarCodigoExiste(code, confirmados)) {
+                // El código existe
+                sendMailWelcome();
+                saveToGoogleSheets();
+            } else {
+                // El código no existe
+                alert("erroraquí");
+            }
+        })
+        .catch(function (error) {
+            console.error('Error al consultar la hoja de cálculo:', error);
+        });
+    //
 
 });
 function validarCodigo(codigo) {
     for (let i = 0; i < invitados.length; i++) {
         if (invitados[i][6] === codigo) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function validarCodigoExiste(codigo, confirmados) {
+    console.log("data");
+
+    console.log(confirmados);
+
+    for (let i = 0; i < confirmados.length; i++) {
+
+        console.log(codigo + " mensaje " + confirmados[i][1]);
+        if (confirmados[i][1] === codigo) {
+            console.log("true");
+
             return true; // El código existe
         }
     }
