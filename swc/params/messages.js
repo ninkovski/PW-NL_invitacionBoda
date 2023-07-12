@@ -7,7 +7,7 @@ export const validMessage = {
     ImputNroInvalid: "Por favor, ingresa un numero de celular válido.",
     ImputCodeInvalid: "Por favor, ingresa un código válido.",
     ImputInvalidCode: "Este código no se encuentra registrado.",
-    ImputInvalidCode: "El código ya ha sido ingresado anteriormente."
+    ImputDuplicadeCode: "El código ya ha sido ingresado anteriormente."
 
 };
 export const confirmMessage = {

@@ -51,7 +51,7 @@ document.getElementById("send-button").addEventListener("click", function (event
                 saveToGoogleSheets();
             } else {
                 // El código no existe
-                alert("erroraquí");
+                alert(validMessage.ImputDuplicadeCode);
             }
         })
         .catch(function (error) {
