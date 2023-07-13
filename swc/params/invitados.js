@@ -66,6 +66,7 @@ export const invitados = [
     [66, "05", "04", "Ninko Amigos", "Alfred", "Pillaca", "330504"],
     [67, "05", "05", "Ninko Amigos", "Sharon", "Moncada", "330505"],
     [68, "05", "06", "Ninko Amigos", "Gianela", "Masgo", "330506"],
-    [62, "04", "08", "Ninko Familia 4", "Cristian", "Rosales", "330408"]
+    [62, "04", "08", "Ninko Familia 4", "Cristian", "Rosales", "330408"],
+    [69, "03", "02", "Laura Familia 3", "Jorge", "Palomino", "110302"]
 ];
 
