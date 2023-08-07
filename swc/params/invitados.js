@@ -72,6 +72,11 @@ export const invitados = [
     [71, "10", "12", "Laura Amigos", "Luis Entique", "Mora", "111012"],
     [72, "10", "13", "Laura Amigos", "Nadia", "Boza", "111013"],
     [73, "10", "14", "Laura Amigos", "Ruth Mabel", "Calderon Prado", "111014"],
-    [74, "10", "15", "Laura Amigos", "Victor Angel", "Cardenas Huaytaya", "111015"]
+    [74, "10", "15", "Laura Amigos", "Victor Angel", "Cardenas Huaytaya", "111015"],
+    [75, "03", "09", "Laura Familia 3", "Luis Alberto", "Janampa", "110309"],
+    [76, "03", "10", "Ninko Familia 6", "Esposa", "Esposa", "110310"],
+    [77, "03", "11", "Laura Familia 3", "Samuel", "Janampa", "110311"],
+    [78, "03", "12", "Ninko Familia 6", "Esposa", "Esposa", "110312"],
+
 ];
 
